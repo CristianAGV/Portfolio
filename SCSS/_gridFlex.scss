@@ -1,0 +1,148 @@
+/*DISEÑO DEL FOOTER QUE CONTIENE REDES SOCIALES*/
+footer {
+  background-color: $navFoot;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .footer__icon {
+    width: 40px;
+    height: 40px;
+    transition: all 1s;
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+/* DISEÑO DEL GRID EN "PROJECTS" */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "projects projects"
+    "project-1 project-2"
+    "project-1 project-3";
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-columns: 30% 50%;
+  height: 70vh;
+  margin: 20px;
+  padding: 20px;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+  a {
+    text-decoration: none;
+    color: $Pcolor;
+  }
+
+  @media only screen and (max-width: 767px) {
+    grid-template-areas:
+      "projects projects"
+      "project-1 project-1"
+      "project-2 project-2"
+      "project-3 project-3";
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 30px;
+    column-gap: 0;
+  }
+
+  div.projects {
+    grid-area: projects;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  div.project-1 {
+    grid-area: project-1;
+    background-image: url(../images/project1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: $weight;
+    font-size: 2.5rem;
+    transition: all 0.5s;
+  }
+  div.project-2 {
+    grid-area: project-2;
+    background-image: url(../images/project2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: w$Pcolor;
+    font-weight: $weight;
+    font-size: 2.5rem;
+    transition: all 0.5s;
+  }
+  div.project-3 {
+    grid-area: project-3;
+    background-image: url(../images/project3.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $Pcolor;
+    font-weight: $weight;
+    font-size: 2.5rem;
+    transition: all 0.5s;
+  }
+  .project-1:hover,
+  .project-2:hover,
+  .project-3:hover {
+    transform: scale(1.1, 1.1);
+  }
+}
+/*ESTILO DEL LINEAR GRADIENT :) */
+.gradiente {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: $Pcolor;
+  background: linear-gradient(45deg, black, transparent);
+  height: 80px;
+  text-align: center;
+  font-weight: $weight;
+  font-size: 1.2rem;
+}
+
+.section-iframe {
+  display: flex;
+  @media only screen and (max-width: 767px) {
+    display: inline-block;
+  }
+  .section-iframe__video {
+    margin: 8rem 0rem;
+    @media only screen and (max-width: 767px) {
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+      height: 35vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .d-none {
+    display: inline-block !important;
+  }
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.skills--derecha {
+  @include flex-end;
+}

@@ -1,0 +1,86 @@
+@import "colors";
+@import "size";
+@import "gridFlex";
+@import "tabletView";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: $Back;
+}
+
+P {
+  color: $Pcolor;
+  font-weight: $weight;
+  font-size: 1.5rem;
+}
+
+h1 {
+  color: $Titles;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 2rem 0rem 0rem 2rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: $weight;
+  margin: 20px;
+  color: $Titles;
+}
+
+form {
+  margin: 4rem;
+}
+
+/*NAV BAR*/
+.nav {
+  background-color: $navFoot;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  ul {
+    font-size: 1.7rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    @media only screen and (max-width: 767px) {
+      font-size: 1.3rem;
+    }
+  }
+  li {
+    margin: 40px;
+    transition: 0.5s;
+    @media only screen and (min-width: 1025px) {
+      &:hover {
+        background-color: $Titles;
+        border-radius: 15px;
+      }
+    }
+    @media only screen and (max-width: 767px) {
+      margin: auto;
+    }
+  }
+  a {
+    color: $Titles;
+    text-decoration: none;
+    padding: 0 20px;
+    &:hover {
+      color: $Pcolor;
+    }
+    @media only screen and (max-width: 767px) {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+$Pcolor: whitesmoke;
+$Titles: #f85e00;
+$Back: #3c3c3c;
+$navFoot: #171614;
+
+.row .carta-p {
+  background-color: $navFoot;
+}
+
+.card-img,
+.card-img-top {
+  background: linear-gradient(45deg, black, transparent);
+}
