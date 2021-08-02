@@ -1,3 +1,26 @@
+/*DISEÑO DE BOTON EN HOME*/
+.button__container {
+  width: 156px;
+  height: 60px;
+  margin-left: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $navFoot;
+  border-radius: 15px;
+  @media only screen and (max-width: 767px) {
+    margin-left: 0;
+    align-self: center;
+    margin-top: 20px;
+  }
+  .button__content {
+    text-decoration: none;
+    color: $Pcolor;
+    font-size: 1.3rem;
+    padding: 20px;
+  }
+}
+
 /*DISEÑO DEL FOOTER QUE CONTIENE REDES SOCIALES*/
 footer {
   background-color: $navFoot;

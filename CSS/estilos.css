@@ -22,7 +22,7 @@
       flex-direction: column; } }
   .container .container__title {
     font-size: 6rem;
-    margin-left: 200px;
+    margin-left: 160px;
     margin-top: 100px; }
     @media only screen and (max-width: 767px) {
       .container .container__title {
@@ -30,13 +30,13 @@
         padding: 0;
         margin-top: 50px;
         font-size: 3.5rem;
-        align-self: center; } }
+        text-align: center; } }
   .container .container__text {
     font-size: 3rem;
     font-weight: 500;
     width: 50%;
-    margin-left: 200px;
-    margin-bottom: 300px; }
+    margin-left: 160px;
+    margin-bottom: 12px; }
     @media only screen and (max-width: 767px) {
       .container .container__text {
         font-size: 1.8rem;
@@ -47,7 +47,7 @@
   .container .container__picture {
     width: 20%;
     position: absolute;
-    right: 300px;
+    right: 250px;
     top: 200px;
     clip-path: circle(); }
     @media only screen and (max-width: 767px) {
@@ -86,7 +86,7 @@
   align-items: center; }
   @media only screen and (max-width: 767px) {
     .parallax {
-      margin: 5px;
+      margin: 20px 5px 0px 5px;
       height: 100vh; } }
   .parallax .parallax__title {
     padding: 2rem 0rem 0rem 2rem; }
@@ -143,6 +143,27 @@
   @media only screen and (max-width: 767px) {
     .skillsVarias-3 h3 {
       font-size: 1rem; } }
+
+/*DISEÑO DE BOTON EN HOME*/
+.button__container {
+  width: 156px;
+  height: 60px;
+  margin-left: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #171614;
+  border-radius: 15px; }
+  @media only screen and (max-width: 767px) {
+    .button__container {
+      margin-left: 0;
+      align-self: center;
+      margin-top: 20px; } }
+  .button__container .button__content {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.3rem;
+    padding: 20px; }
 
 /*DISEÑO DEL FOOTER QUE CONTIENE REDES SOCIALES*/
 footer {
@@ -349,9 +370,14 @@ form {
   .nav a {
     color: #f85e00;
     text-decoration: none;
-    padding: 0 20px; }
+    padding: 2px 20px; }
     .nav a:hover {
       color: whitesmoke; }
     @media only screen and (max-width: 767px) {
       .nav a {
         padding: 0; } }
+
+/* ALGUNAS MODIFICACIONES A LAS CLASES DADAS POR BOOTSTRAP */
+ul {
+  margin-bottom: 0;
+  padding-left: 0; }

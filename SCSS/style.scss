@@ -75,7 +75,7 @@ form {
   a {
     color: $Titles;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 2px 20px;
     &:hover {
       color: $Pcolor;
     }
@@ -83,4 +83,10 @@ form {
       padding: 0;
     }
   }
+}
+
+/* ALGUNAS MODIFICACIONES A LAS CLASES DADAS POR BOOTSTRAP */
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
 }
