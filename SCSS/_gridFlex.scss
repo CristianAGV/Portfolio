@@ -1,8 +1,15 @@
 /*DISEÑO DE BOTON EN HOME*/
+.button__mobile {
+  @media only screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+}
+
 .button__container {
   width: 156px;
   height: 60px;
-  margin-left: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,6 +40,7 @@ footer {
     width: 40px;
     height: 40px;
     transition: all 1s;
+    cursor: pointer;
     &:hover {
       transform: translateY(-10px);
     }
@@ -145,6 +153,8 @@ footer {
   }
   .section-iframe__video {
     margin: 8rem 0rem;
+    border: 1px solid black;
+    box-shadow: -9px -8px 15px 5px rgba(206, 132, 60, 0.85);
     @media only screen and (max-width: 767px) {
       margin: 0;
       padding: 10px;

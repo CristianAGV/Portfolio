@@ -1,30 +1,64 @@
+/*VISTA TABLET*/
 @media only screen and (min-width: 768px) and (max-width: 1239px) {
   .nav ul {
-    font-size: 1.8rem;
+    justify-content: center;
+    a {
+      padding: 0;
+    }
   }
-  .nav li {
-    margin: auto;
-  }
-
   .container {
     padding: 0 40px;
 
-    .container__picture {
-      width: 30%;
-      right: 265px;
-      top: 150px;
+    .container__wrap {
+      flex-direction: column;
+      .container__block {
+        width: 100%;
+
+        .container__title {
+          padding: 0;
+          text-align: center;
+        }
+
+        .container__text {
+          font-size: 2.5rem;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        .button__mobile {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 40px;
+        }
+      }
+      .container__picture {
+        align-self: center;
+      }
     }
-    .container__title {
-      margin-top: 270px;
-      padding: 0;
-      margin-left: 0;
-      text-align: center;
-    }
-    .container__text {
-      font-size: 2.5rem;
-      width: 100%;
-      margin-left: 0;
-      text-align: center;
-    }
+  }
+
+  .carousel-size {
+    padding: 0;
+  }
+  .carouselText p {
+    margin-bottom: 30%;
+  }
+  .center-cards {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .section-iframe__question {
+    align-self: center;
+    margin-left: 15px;
+  }
+  .section-iframe .section-iframe__video {
+    margin: 8rem 1rem 8rem 0;
+  }
+
+  .grid-container {
+    grid-template-columns: 40% 60%;
   }
 }
