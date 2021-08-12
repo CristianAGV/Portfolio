@@ -49,13 +49,16 @@
     justify-content: center;
     margin-bottom: 25px;
   }
+  .section-iframe {
+    flex-direction: column;
+  }
 
   .section-iframe__question {
     align-self: center;
     margin-left: 15px;
   }
   .section-iframe .section-iframe__video {
-    margin: 8rem 1rem 8rem 0;
+    align-self: center;
   }
 
   .grid-container {
