@@ -55,13 +55,12 @@
       <article class="container__wrap">
         <div class="container__block">
           <h1 data-aos="fade-right" class="container__title">
-            Hola, soy Cristian,
+            Hola, soy <span class="auto-words"></span>
           </h1>
           <p data-aos="fade-right" class="container__text">
-            un desarrollador front-end que te ayudara a construir sitios y
-            aplicaciones web interactivas que corran en las distintas
-            plataformas y dispositivos, desde una landing page, hasta una
-            aplicacion web compleja.
+            te ayudaré a construir sitios y aplicaciones web interactivas que
+            corran en las distintas plataformas y dispositivos, desde una
+            landing page, hasta una aplicacion web compleja.
           </p>
           <div class="button__mobile">
             <div class="button__container">
@@ -71,12 +70,13 @@
         </div>
 
         <!--Imagen Personal-->
-        <img
-          src="images/perfil.jpeg"
-          alt="imagen personal"
-          class="container__picture"
-          data-aos="fade-left"
-        />
+        <div class="container__picture">
+          <img
+            src="images/perfil.jpeg"
+            alt="imagen personal"
+            data-aos="fade-left"
+          />
+        </div>
       </article>
     </section>
 
@@ -85,6 +85,20 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      let typed = new Typed(".auto-words", {
+        strings: [
+          "Cristian",
+          "Frontend Developer",
+          "Backend Developer",
+          "Fullstack Developer",
+        ],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
     </script>
   </body>
 </html>

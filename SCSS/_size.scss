@@ -51,12 +51,17 @@ $weight: 500;
       }
     }
     .container__picture {
-      width: 38rem;
-      max-height: 35vh;
-      clip-path: circle();
+      width: 400px;
+      height: 400px;
       @media only screen and (max-width: 767px) {
         align-self: center;
-        width: 45%;
+        width: 200px;
+        height: 200px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
       }
     }
   }

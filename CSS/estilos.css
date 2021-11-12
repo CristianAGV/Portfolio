@@ -52,13 +52,17 @@
             margin-bottom: 30px;
             text-align: center; } }
     .container .container__wrap .container__picture {
-      width: 38rem;
-      max-height: 35vh;
-      clip-path: circle(); }
+      width: 400px;
+      height: 400px; }
       @media only screen and (max-width: 767px) {
         .container .container__wrap .container__picture {
           align-self: center;
-          width: 45%; } }
+          width: 200px;
+          height: 200px; } }
+      .container .container__wrap .container__picture img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; }
 
 /*DISEÑO DEL PARALLAX y SLIDER*/
 .carousel-size {
