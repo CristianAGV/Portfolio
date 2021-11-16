@@ -31,11 +31,11 @@
         .container .container__wrap .container__block {
           width: 100%; } }
       .container .container__wrap .container__block .container__title {
-        font-size: 6rem; }
+        font-size: 6rem;
+        padding: 0; }
         @media only screen and (max-width: 767px) {
           .container .container__wrap .container__block .container__title {
             margin-left: 0;
-            padding: 0;
             margin-top: 50px;
             font-size: 3.5rem;
             text-align: center; } }
@@ -43,13 +43,12 @@
         font-size: 3rem;
         font-weight: 500;
         width: 100%;
-        margin-bottom: 12px; }
+        margin-bottom: 30px; }
         @media only screen and (max-width: 767px) {
           .container .container__wrap .container__block .container__text {
             font-size: 1.8rem;
             width: 100%;
             margin-left: 0;
-            margin-bottom: 30px;
             text-align: center; } }
     .container .container__wrap .container__picture {
       width: 400px;
@@ -108,7 +107,7 @@
 
 /*ESTILOS PARA LAS CARDS */
 .container-margin {
-  margin-bottom: 20px; }
+  margin-bottom: 40px; }
   @media only screen and (max-width: 767px) {
     .container-margin .card-margin {
       margin-bottom: 20px;
@@ -166,7 +165,10 @@
   justify-content: center;
   align-items: center;
   background-color: #171614;
-  border-radius: 15px; }
+  border-radius: 15px;
+  transition: all 0.3s ease; }
+  .button__container:hover {
+    transform: scale(1.1); }
   @media only screen and (max-width: 767px) {
     .button__container {
       margin-left: 0;
@@ -206,9 +208,9 @@ footer {
 /* DISEÑO DEL GRID EN "PROJECTS" */
 .grid-container {
   display: grid;
-  grid-template-areas: "projects projects" "project-1 project-2" "project-1 project-3";
-  grid-template-rows: 100px 1fr 1fr;
-  grid-template-columns: 30% 50%;
+  grid-template-areas: "projects projects projects" "project-1 project-2 project-3" "project-1 project-2 project-3" "project-1 project-2 project-3";
+  grid-template-rows: 100px 1fr 1fr 1fr;
+  grid-template-columns: 30% 30% 30%;
   height: 70vh;
   margin: 20px;
   padding: 20px;
@@ -217,16 +219,34 @@ footer {
   row-gap: 10px; }
   .grid-container a {
     text-decoration: none;
-    color: whitesmoke; }
+    color: whitesmoke;
+    font-weight: 300;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    width: 100%;
+    height: 47px;
+    justify-content: center;
+    align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .grid-container a {
+        font-size: 1.2rem; } }
   @media only screen and (max-width: 767px) {
     .grid-container {
       grid-template-areas: "projects projects" "project-1 project-1" "project-2 project-2" "project-3 project-3";
-      grid-template-rows: 100px 1fr 1fr 1fr;
+      grid-template-rows: 100px 33% 33% 33%;
       grid-template-columns: 100%;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
+      margin-bottom: 150px;
       padding: 30px;
       column-gap: 0; } }
+  @media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .grid-container {
+      grid-template-areas: "projects projects" "project-1 project-1" "project-2 project-2" "project-3 project-3";
+      grid-template-rows: 100px 40% 40% 40%;
+      grid-template-columns: 70%;
+      min-height: 100vh;
+      margin-bottom: 360px; } }
   .grid-container div.projects {
     grid-area: projects;
     display: flex;
@@ -235,8 +255,8 @@ footer {
     align-items: center; }
   .grid-container div.project-1 {
     grid-area: project-1;
-    background-image: url(../images/project1.jpg);
-    background-size: cover;
+    background-image: url(../images/crud.png);
+    background-size: contain;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -246,8 +266,8 @@ footer {
     transition: all 0.5s; }
   .grid-container div.project-2 {
     grid-area: project-2;
-    background-image: url(../images/project2.jpg);
-    background-size: cover;
+    background-image: url(../images/beautify.png);
+    background-size: contain;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -258,8 +278,8 @@ footer {
     transition: all 0.5s; }
   .grid-container div.project-3 {
     grid-area: project-3;
-    background-image: url(../images/project3.jpg);
-    background-size: cover;
+    background-image: url(../images/liebre.png);
+    background-size: contain;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -287,19 +307,19 @@ footer {
   font-size: 1.2rem; }
 
 .section-iframe {
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   @media only screen and (max-width: 767px) {
     .section-iframe {
-      flex-direction: column;
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem;
+      padding: 0 20px; } }
   .section-iframe .section-iframe__video {
     margin: 8rem 0rem;
-    border: 1px solid black;
-    box-shadow: -9px -8px 15px 5px rgba(206, 132, 60, 0.85); }
+    box-shadow: 1px 1px 5px 2px #7f5911; }
     @media only screen and (max-width: 767px) {
       .section-iframe .section-iframe__video {
         margin: 0;
-        padding: 10px;
         width: 100%;
         height: 35vh; } }
   @media only screen and (max-width: 767px) {
@@ -355,9 +375,7 @@ footer {
     align-self: center;
     margin-left: 15px; }
   .section-iframe .section-iframe__video {
-    align-self: center; }
-  .grid-container {
-    grid-template-columns: 40% 60%; } }
+    align-self: center; } }
 
 * {
   padding: 0;
@@ -381,6 +399,9 @@ h1 {
   font-weight: 700;
   padding: 2rem 0rem 0rem 2rem;
   margin-bottom: 5rem; }
+
+.center-title {
+  text-align: center; }
 
 h2 {
   font-size: 2rem;

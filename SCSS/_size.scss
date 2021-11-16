@@ -28,9 +28,9 @@ $weight: 500;
       }
       .container__title {
         font-size: 6rem;
+        padding: 0;
         @media only screen and (max-width: 767px) {
           margin-left: 0;
-          padding: 0;
           margin-top: 50px;
           font-size: 3.5rem;
           text-align: center;
@@ -40,12 +40,11 @@ $weight: 500;
         font-size: 3rem;
         font-weight: $weight;
         width: 100%;
-        margin-bottom: 12px;
+        margin-bottom: 30px;
         @media only screen and (max-width: 767px) {
           font-size: 1.8rem;
           width: 100%;
           margin-left: 0;
-          margin-bottom: 30px;
           text-align: center;
         }
       }
@@ -120,7 +119,7 @@ $weight: 500;
 
 /*ESTILOS PARA LAS CARDS */
 .container-margin {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   @media only screen and (max-width: 767px) {
     .card-margin {
       margin-bottom: 20px;
